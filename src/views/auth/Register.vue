@@ -90,7 +90,7 @@ export default {
           avatar: `https://api.adorable.io/avatars/200/${this.username}.png`
         }
         // localStorage 的用户信息
-        const localUser = ls.getItem('user')
+        const localUser = this.$store.state.user
 
         // 检查是否重名
         if (localUser) {
@@ -107,7 +107,7 @@ export default {
     // 登录
     login(user) {
       // 保存用户信息
-      ls.setItem('user', user)
+      this.$store.dispatch('login', user)
       this.showMsg('注册成功', 'success')
     },
     showMsg(msg, type = 'warning') {
