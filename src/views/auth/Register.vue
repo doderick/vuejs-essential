@@ -18,7 +18,7 @@
             <input type="password" v-model.trim="password" id="password" v-validator.required="{ regex: /^\w{6,16}$/, error: '密码要求 6 ~ 16 个单词字符' }" class="form-control" placeholder="请填写密码">
           </div>
           <div class="form-group">
-            <label for="" class="control-label">确认密码</label>
+            <label for="" class="control-label">重复密码</label>
             <input type="password" v-model.trim="cpassword" v-validator.required="{ target: '#password' }" class="form-control" placeholder="请再填写一次密码">
           </div>
           <div class="form-group">
