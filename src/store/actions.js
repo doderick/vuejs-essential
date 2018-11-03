@@ -119,6 +119,6 @@ export const like = ({ commit, state }, { articleId, isAdd }) => {
 
   // 提交 UPDATE_ARTICLES 以更新所有文章
   commit('UPDATE_ARTICLES', articles)
-  // 、返回点赞用户列表
+  // 返回点赞用户列表
   return likeUsers
 }

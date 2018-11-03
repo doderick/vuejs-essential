@@ -139,7 +139,7 @@ export default {
         const target = e.currentTarget
         // 点赞按钮是否含有 active类，我们用它来判断是否已赞
         const active = target.classList.contains('active')
-        const acticleId = this.articleId
+        const articleId = this.articleId
 
         if (active) {
           //　清除已赞样式
