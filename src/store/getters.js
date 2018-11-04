@@ -134,7 +134,7 @@ export const getArticlesByFilter = (state, getters) => (filter) => {
           const bCommentsLength = bComments.length
 
           if (aCommentsLength > 0) {
-            if (bCommentsLenght > 0) {
+            if (bCommentsLength > 0) {
               return new Date(bComments[bCommentsLength - 1].date) - new Date(aComments[aCommentsLength - 1].date)
             } else {
               return -1

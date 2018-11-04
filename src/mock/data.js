@@ -26,7 +26,7 @@ export const mockArticles = (num = 10) => {
 		let uname = Random.first()
 
 		while (unames.indexOf(uname) !== -1 || forbiddenNames.indexOf(uname) !== -1) {
-			uanme = Random.first()
+			uname = Random.first()
 		}
 
 		unames.push(uname)
