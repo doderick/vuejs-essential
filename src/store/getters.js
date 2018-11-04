@@ -33,7 +33,7 @@ export const computedArticles = (state) => {
         addUserInfo.call(article)
       }
 
-      // 缇娜及用户信息到评论
+      // 添加用户信息到评论
       if (Array.isArray(comments)) {
         comments.forEach((comment) => {
           if (comment.uid === 1) {
@@ -78,7 +78,7 @@ export const getArticlesByUid = (state, getters) => (uid, user) => {
     }
 
     // 使用指定 uid 过滤所有文章
-    articles = articles.filter(article => paraseInt(uid) === parseInt(article.uid))
+    articles = articles.filter(article => parseInt(uid) === parseInt(article.uid))
   } else {
     articles = []
   }
