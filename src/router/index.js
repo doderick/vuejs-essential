@@ -10,9 +10,9 @@ const router = new Router({
   // 指定滚动行为
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
-      // 有错点时，滚动到锚点
+      // 有锚点时，滚动到锚点
       return { selector: to.hash }
-    } else if (savePosition) {
+    } else if (savedPosition) {
       // 有保存位置时，滚动到保存位置
       return savedPosition
     } else {
